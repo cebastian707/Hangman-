@@ -19,7 +19,7 @@ int main() {
 	srand(time(NULL));
 	int choice = rand() % Maxes;
 	string hidden = "*****";
-	string words[Maxes] = { "WORLD","POWER","GAMES","EXTRA","PIZZA","CHIVA","DADDY","NIGGA","BUDDY","CODES" };
+	string words[Maxes] = { "WORLD","POWER","GAMES","EXTRA","PIZZA","CHIVA","VIEWS","DRAKE","BUDDY","CODES" };
 	char user = '\n';
 	int Max = 8;
 	int Tries = 1;
