@@ -115,7 +115,7 @@ void user_guess(char& guess,string& hiddens,string& word) {
 	cin >> guess;
 	guess = toupper(guess);
 
-    while (toupper(guess) < 'A' || toupper(guess) > 'Z') {
+    while (toupper(guess) < 'A' || toupper(guess) > 'Z' || !cin) {
 		cin.clear();
 		cin.ignore(200, '\n');
 		cout << "Incorrect not a letter retype!" << endl;
