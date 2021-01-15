@@ -4,10 +4,11 @@
 #include<string>
 #include<cctype>
 #include<ctime>
-//#include<time.h>
+#include<time.h>
 
 using namespace std;
 
+void wordes(string[], int);
 void welcome();
 void user_guess(char&,string&,string&);
 void update(char&, string&, string&);
@@ -28,6 +29,9 @@ int main() {
 	
 	
 	welcome();
+	cout<<endl;
+	wordes(words, Maxes);
+	cout<<endl;
 	cout << "Your on try " << Tries << endl;
 	do {
 		user_guess(user, hidden, the_one);
@@ -44,6 +48,13 @@ int main() {
 	} while (Max > Tries);
 
 	return 0;
+}
+
+void wordes(string the_word [], int size) {
+	for (int i = 0; i < size; i++){
+		cout << "The words could be:";
+		cout << the_word[i] <<"."<<endl;
+	}
 }
 
 void loser(int& M, int& T,string & W) {
